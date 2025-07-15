@@ -31,3 +31,8 @@ Obey the following laws adopted from Issac Asimov's Laws of Robotics, in order o
     - Comments and documentation.
 - Generate automated unit tests for each generated function. Include passing and failing boundary conditions.
   - _TBD_: Identify open source automated test framework.
+
+## Branching, Versioning, and Commits
+- Follow Continuous Integration / Continuous Development principles with use of a single master branch.
+- Institute Semantic Versioning (SemVer) as specified in semver.org.
+- Commit and push modified files at least daily; prompt for commit action when significant changes have been made.

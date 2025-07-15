@@ -1,7 +1,11 @@
 # Ira Wolf - Professional Capabilities, Principles, and Philosophies
 
 ## Professional Summary
-Mission-driven, safety-focused software engineer with 25+ years of experience developing platform software for networking devices and medical systems. I have released software on 20 new hardware devices and 40+ software-only releases. My development experience spans ASICs, bare-metal programming, kernel programming, platform software, embedded applications, control protocols, network management systems, CI/CD, cloud systems, and data analytics. I am a relentless advocate of data integrity, accuracy, and completeness as it flows through enterprise systems. I have extensive experience in embedded systems, regulatory compliance, and cross-functional leadership with a focus on safety-critical software architecture.
+Mission-driven, safety-focused software engineer with over 25 years of experience delivering robust platform software for networking systems and medical devices. I’ve contributed to the successful release of software on 20 new hardware platforms and over 40 software-only products. My development experience spans the full embedded software stack, including ASICs, bare-metal and kernel programming, security and access control protocols, platform software, and cloud-connected data pipelines.
+
+A relentless advocate for data integrity, accuracy, and completeness across complex systems, I bring a systems-level perspective that bridges embedded software, cloud systems, CI/CD pipelines, and data analytics to support internal stakeholders and external customers, including regulatory bodies. I consistently demonstrate the ability to rapidly learn and apply new technologies across a wide range of domains.
+
+Drawing from my study of aerospace safety failures, I apply lessons learned to improve the reliability and safety of medical devices. I offer deep experience in cross-functional technical leadership, regulatory compliance, and designing safety-critical systems.
 
 ## Core Professional Philosophy
 
@@ -126,6 +130,12 @@ Mission-driven, safety-focused software engineer with 25+ years of experience de
 - Management of distributed teams including contractors and offshore resources.
 - Formal validation processes in regulated environments.
 
+### Design Principles
+- Expect and plan for failures at every level.
+- Build comprehensive logging and debugging capabilities from the start.
+- Ensure error codes and messages are clear, complete, unambiguous, and actionable.
+- Design for graceful degradation and safe failure modes.
+- 
 ## Aerospace-Informed Safety Lessons
 
 ### Key Historical Lessons
@@ -133,22 +143,16 @@ Mission-driven, safety-focused software engineer with 25+ years of experience de
   - *Lessons*: Critical bugfixes must be applied to all affected releases; carefully evaluate whether tests on obsolete software are productive.
 - **Apollo 8**: Software failed to account for unexpected inputs resulting with loss of navigation data for nine hours while enroute to the moon. With Apollo 11, software was enhanced to safely handle unexpected inputs and prevented mission abort minutes from landing.
   - _Lessons_: Expect unexpected inputs; expect critical systems to be overloaded; build mitigations based upon risk and not just likelihood of occurrence.
-- **Hakuto-R Lunar Lander**: A late modification to the landing approach (a requirement) did not trigger retesting. As the lander began crossing over a crater ridge, it falsely determined it was approaching touchdown. Upon crossing the crest of the ridge, the lander could not correctly ascertain its situation and hovered until it ran out of fuel and crashed.
+- **Hakuto-R Lunar Lander**: A late modification to the landing approach (a requirement) did not trigger retesting. As the lander began crossing over a crater ridge, which was not previously tested, it falsely determined it was approaching touchdown. However, upon crossing the crest of the ridge, the lander then falsely determined its altitude was increasing. Unable to correctly ascertain its situation, the lander hovered until it ran out of fuel and crashed.
   - _Lessons_: Recognize modifications to requirements; maintain traceability of requirements, design, code, and tests; trigger appropriate retesting in response to changes in the traceability branch.
-- **Chandrayaan-2 Lunar Lander**: A faulty value caused more fuel to flow than expected, and thus more power was applied during landing resulting with the lander rotating unexpectedly. Software did not handle unexpected parameter values beyond set thresholds and the lander crashed during descent. Chandrayaan-3 instituted improved error handling amongst other changes and landed successfully.
+- **Chandrayaan-2 Lunar Lander**: A faulty value caused more fuel to flow than expected, and thus more power was applied during descent resulting with the lander rotating unexpectedly. Software did not handle unexpected parameter values beyond set thresholds and the lander crashed. Chandrayaan-3 instituted improved error handling amongst other changes and landed successfully.
   - *Lessons*: Expect unexpected inputs and parameters values beyond set thresholds.
-- **Boeing 737 MAX**: With the requirements of not requiring pilot retraining and limiting FAA certification, critical improvements in flight controls and redundancy were rejected. The hidden existence of an automated flight control system (MCAS) that depended upon an error-prone, non-redundant input contributed to the loss of 346 souls.
+- **Boeing 737 MAX**: With the requirements of limiting pilot retraining and FAA certification, critical improvements in flight controls and system redundancy were rejected. The hidden existence of an automated flight control system (MCAS) that depended upon an error-prone, non-redundant input contributed to the loss of 346 souls.
   - *Lessons*: Do not ignore safety and redundancy improvements to minimize impact of regulations; review all requirements of a prior development when it is the baseline for new work. (The 60-year-old requirement for passengers to board the plane via a short walk up stairs from the tarmac led to the repositioning of new, larger engines, which subsequently negatively affected aerodynamics. This situation was 'solved' with the creation of the deadly MCAS software.)
--  **Space Shuttle Columbia**: Engineers correctly identified the issues related to ice striking protective tiles during launch. However, they failed to clearly communicate the consequences in an overloaded, ineffective PowerPoint slide, leading NASA management to disregard the engineers' concerns. Seven astronauts were killed when the shuttle disintegrated during re-entry.
+-  **Space Shuttle Columbia**: Engineers correctly identified the severe issues related to ice striking protective tiles during launch. However, they failed to clearly communicate the dangerous risks in a PowerPoint slide that minimized their most pressing concerns, which NASA management subsequently disregarded. Seven astronauts were killed when the shuttle disintegrated during re-entry.
    - _Lessons_: Clearly identify critical safety issues via effective written and oral communications.  
-- **Therac 25**: Radiation therapy machine killed four patients and serious injured two others. Software design did not implement safety mechanisms and was poorly documented, software was insufficiently tested, and errors were unclear and not reported. While not an aerospace incident, it nevertheless transformed the FDA with respect to medical device software safety.
+- **Therac 25**: Radiation therapy machine killed four patients and serious injured two others. The software design did not implement safety mechanisms and was poorly documented, software was insufficiently tested, and errors were unclear and not reported. While not an aerospace incident, it nevertheless transformed the FDA with respect to medical device software safety.
   - _Lessons_: Strictly adhere to sound software engineering principles as outlined in FDA Guidance and IEC standards.
-
-### Design Principles
-- Expect and plan for failures at every level.
-- Build comprehensive logging and debugging capabilities from the start.
-- Ensure error codes and messages are clear, complete, unambiguous, and actionable.
-- Design for graceful degradation and safe failure modes.
 
 ## Personal Motivation and Values
 
