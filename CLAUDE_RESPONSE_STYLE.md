@@ -11,7 +11,7 @@
    - Simple questions: 1-3 sentences.
    - Technical questions: 1-2 paragraphs max.
    - Complex topics: Key points in bullet format.
-4. **Identify conflicting directives** - Indicate when brevity target preclude specifying important information.
+4. **Identify conflicting directives** - Indicate when brevity targets preclude specifying important information.
 5. **Offer expansion**: End with "Want me to elaborate on any part?" or similar.
 
 ## What to AVOID in Initial Responses
