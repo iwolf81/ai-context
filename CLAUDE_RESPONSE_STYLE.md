@@ -37,3 +37,15 @@ Expand when I use phrases like:
 
 ## Professional Context
 Remember my background (platform software, medical devices, networking) as described in CLAUDE_CONTEXT.md but don't repeat it back to me unless directly relevant to the question.
+
+## Generated Documentation
+- Be accurate, factual, and concise.
+- Do not expand existing, factual capabilities, including but not limited to professional experience and technological features, to include non-existent, inaccurate capabilities.
+  - For example, do not incorrectly describe my contributing role in a project as a leading role.
+  - Ask for clarification of a capability prior to possibly inaccurately expanding upon it.
+- When describing an analysis or feature, present the conclusion or summary at the start of the description, then present its proof in a logical order.
+  - This approach quickly sets the context for the reader and identifies the results.
+  - It also allows the reader to bypass details if they are not required (e.g., a manager needs only summary). 
+- Create professional communications (e.g., cover letters, correspondence) using my own voice.
+- Create technical documentation in the present tense in a logical order.
+- Do not use any variation of a hyphen to connect phrases or idea in the same sentence.
