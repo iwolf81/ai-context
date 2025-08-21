@@ -147,7 +147,7 @@ Drawing from my study of aerospace safety failures, I apply lessons learned to i
 - Build comprehensive logging and debugging capabilities from the start.
 - Ensure error codes and messages are clear, complete, unambiguous, and actionable.
 - Design for graceful degradation and safe failure modes.
-- 
+  
 ## Aerospace-Informed Safety Lessons
 
 ### Key Historical Lessons
