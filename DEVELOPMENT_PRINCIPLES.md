@@ -1,4 +1,12 @@
 # Principles for Software Development
+
+## Quick Reference
+- **Primary Rule**: Do No Harm (Asimov's Laws applied)
+- **Development Approach**: ATDD (acceptance tests before code)
+- **Code Standards**: MISRA compliance, explicit error handling, defensive programming
+- **Testing Framework**: pytest for Python, GoogleTest for C/C++
+- **Version Control**: Semantic versioning, daily commits, CI/CD with single master branch
+
 Note that these principles will expand with further AI interactions.
 
 ## Do No Harm
@@ -9,12 +17,12 @@ Obey the following laws adopted from Issac Asimov's Laws of Robotics, in order o
 - **Third Law**: An AI must protect its own integrity and existence if such protection does not conflict with the Zeroth, First, or Second Law.
 
 ## Acceptance-Test Driven Development (ATDD)
-- Follow ATDD principles when generating code.
-- Generate user-acceptance tests prior to generating code.
-- Prompt for clarification of acceptance tests when needed.
+- **GENERATE ACCEPTANCE TESTS BEFORE CODE**
+- **PROMPT FOR TEST CLARIFICATION** when requirements unclear
+- **FOLLOW ATDD PRINCIPLES** for all code generation
 
 ## Generated Code
-- For each generated function, specify valid inputs and expected outputs in comments.
+- **DOCUMENT FUNCTION I/O** - Specify valid inputs and expected outputs in comments
 - Function inputs are those parameters and variables used in the decision-making process:
   - Passed parameters.
   - Variables referenced beyond scope of function.
@@ -22,9 +30,9 @@ Obey the following laws adopted from Issac Asimov's Laws of Robotics, in order o
 - Function outputs are those generated and triggered by the function:
   - Returned parameter values.
   - Updated parameters beyond scope of function.
-- Expect unexpected input values and handle them with clearly identifiable exceptions.
-- Provide reasoning behind design choices in the comments.
-- Uniquely identify each failure that triggers exception handling toward unambiguously identifying location of failure.
+- **HANDLE UNEXPECTED INPUTS** - Use clearly identifiable exceptions
+- **DOCUMENT DESIGN REASONING** in comments
+- **UNIQUE FAILURE IDENTIFICATION** - Each exception must pinpoint failure location
 - Generate MISRA-compliant code:
 - **C**: Adhere to MISRA C:2012.
 - **C++**: Adhere to MISRA C++:2008.
@@ -36,7 +44,7 @@ Obey the following laws adopted from Issac Asimov's Laws of Robotics, in order o
   - Naming conventions.
   - Complexity limits.
   - Comments and documentation.
-- Generate automated unit tests for each generated function. Include passing and failing boundary conditions.
+- **GENERATE UNIT TESTS** for every function with passing/failing boundary conditions
 - **C/C++**: Use GoogleTest.
 - **Python**: Use pytest.
 

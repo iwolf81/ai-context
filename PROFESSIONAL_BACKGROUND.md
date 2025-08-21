@@ -1,5 +1,12 @@
 # Ira Wolf - Professional Capabilities, Principles, and Philosophies
 
+## Quick Reference
+- **Technical Focus**: Embedded systems, medical devices, networking (25+ years)
+- **Core Expertise**: Platform software, safety-critical systems, regulatory compliance
+- **Leadership Style**: Three C's (Communication, Coordination, Collaboration)
+- **Safety Philosophy**: Aerospace-informed, debugging-first, failure-aware design
+- **Key Standards**: FDA validation, IEC 62304, GDPR compliance
+
 ## Professional Summary
 Mission-driven, safety-focused software engineer with over 25 years of experience delivering robust platform software for networking systems and medical devices. I’ve contributed to the successful release of software on 20 new hardware platforms and over 40 software-only products. My development experience spans the full embedded software stack, including ASICs, bare-metal and kernel programming, security and access control protocols, platform software, and cloud-connected data pipelines.
 
@@ -37,6 +44,11 @@ Drawing from my study of aerospace safety failures, I apply lessons learned to i
 - **Margaret Hamilton**: Director of software for Apollo Guidance Computer. Coined "software engineering" to distinguish software design drawings from hardware engineering drawings. Advocate for preventing defects in design and gracefully handling errors without impeding operations. 
 - **Grace Hopper**: Rear Admiral US Navy, creator of high-level programming languages, introduced the terms 'bug' and 'debugging' to software development. Famously stated "The most damaging phrase in the language is *'We've always done it this way.'*"
 - **Dave Farley**: Creator of "Modern Software Engineering" channel. Advocate of Continuous Development and Acceptance-Test Driven Development.
+
+### AI Educational Resources
+- **Anthropic**: https://www.youtube.com/@anthropic-ai
+- **AI.Engineer**: https://www.youtube.com/@aiDotEngineer
+- **IBM Technology**: https://www.youtube.com/@IBMTechnology
 
 ## Technical Expertise
 
@@ -166,18 +178,3 @@ Drawing from my study of aerospace safety failures, I apply lessons learned to i
 - Executive Board Member, Heart of New England Council, Scouting America.
 - Application of leadership principles across professional and volunteer roles.
 
-## Writing and Communication Style
-
-### Technical Communication Characteristics
-- Detailed, precise technical descriptions.
-- Focus on practical outcomes and customer value.
-- Integration of lessons learned and continuous process improvements.
-- Specific examples with concrete, measurable results.
-- Progression from technical foundation to broader philosophy.
-
-### Professional Voice Elements
-- Confident but not boastful tone.
-- Emphasis on team success over individual achievement.
-- Pride in mission-critical work and customer outcomes.
-- Thoughtful, engineering-focused approach to problem-solving.
-- Integration of historical lessons and continuous learning.
