@@ -3,5 +3,5 @@ The purpose of the markdown files in this directory is to initialize each new AI
 
 ## Files
 - **PROFESSIONAL_BACKGROUND.md**: Ira Wolf - Professional Capabilities, Principles, and Philosophies
-- **INTERACTION_GUIDELINES.md**: AI/Developer Interaction and Response Guidelines
 - **DEVELOPMENT_PRINCIPLES.md**: Principles for Software Development
+- **INTERACTION_GUIDELINES.md**: AI/Developer Interaction and Response Guidelines
