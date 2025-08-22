@@ -113,3 +113,39 @@ Update if changes would take >30 minutes to explain to someone picking up the wo
 - Emphasis on team success over individual achievement
 - Pride in mission-critical work and customer outcomes
 - Engineering-focused problem-solving approach
+
+## Collaboration Documentation
+
+### COLLABORATION_LOG.md Maintenance
+You MUST create and maintain a COLLABORATION_LOG.md file in each project repository to document the evolution of AI-human collaboration patterns.
+
+#### When to Create
+- At the start of any multi-session project
+- When beginning work on a new repository
+- When collaboration patterns or processes are explicitly discussed
+
+#### Content Requirements
+- **Project header**: Name, start date (use format: 21Aug2025), purpose
+- **Phase documentation**: Each distinct collaboration phase with:
+  - User interaction patterns and feedback styles
+  - Claude response evolution and adaptation
+  - Key decisions and turning points
+  - Best practices identified
+- **Evolution summary**: Technical, documentation, and collaboration progression
+- **Lessons learned**: Specific insights about effective AI-human collaboration
+
+#### Update Triggers
+- Major shifts in collaboration approach or user feedback style
+- Significant project milestones or design decisions
+- Process meta-discussions or workflow changes
+- Discovery of new best practices or anti-patterns
+- At natural breakpoints (weekly, major deliverables)
+
+#### Format Standards
+- Use clear phase headers with descriptive names
+- Include specific quotes and examples from interactions
+- Distinguish between user strategies and Claude responses
+- Highlight best practices with clear reasoning
+- Maintain chronological order with cross-references
+
+This documentation serves both as project context and as training data for improving AI-human collaboration across all projects.
