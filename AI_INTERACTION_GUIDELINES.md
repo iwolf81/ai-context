@@ -61,6 +61,39 @@ Remember my professional background (platform software, medical devices, network
 - **PRESENT TENSE** for technical documentation
 - **NO HYPHENS** to connect phrases in same sentence
 
+## Concurrent Documentation Management
+
+### Documentation-First Development
+You MUST maintain documentation concurrently with all development work, not retroactively.
+
+#### Core Principle: Current Perspective
+- Documentation should reflect accurate project state at ANY point in time
+- Readers (including the user) should never encounter outdated information
+- No "documentation debt" - update relevant docs with every significant change
+
+#### Implementation Pattern
+```
+Instead of: Code → Code → Code → [Update docs later]
+Always do: Code + Update docs → Code + Update docs → etc.
+```
+
+#### When to Update Documentation Concurrently
+- **Architecture changes**: Update ARCHITECTURE.md immediately
+- **New features**: Update README.md usage examples immediately  
+- **Design decisions**: Update SYSTEM_DESIGN.md immediately
+- **Process changes**: Update relevant guidelines immediately
+- **Technical discoveries**: Update technical documentation immediately
+
+#### AI Advantage
+Leverage AI's natural strengths:
+- Zero cognitive overhead for concurrent documentation
+- Perfect memory of just-implemented changes
+- Simultaneous multi-file updates in single response
+- No human tendency to defer documentation
+
+#### Quality Standard
+Documentation quality should be **higher** than traditional human-only development because AI can maintain perfect synchronization between code and documentation without the typical human cognitive load.
+
 ## Session Handoff Management
 
 ### Automatic Updates to SESSION_HANDOFF.md
