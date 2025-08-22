@@ -126,6 +126,11 @@ You MUST create and maintain a COLLABORATION_LOG.md file in each project reposit
 
 #### Content Requirements
 - **Project header**: Name, start date (use format: 21Aug2025), purpose
+- **Development Velocity Analysis**: Quantify actual AI-human collaboration time across sessions:
+  - Break down working sessions vs break periods using commit timestamps
+  - Calculate total active collaboration hours vs calendar time
+  - Document major deliverables achieved per session
+  - Highlight velocity advantages of AI-assisted development
 - **Phase documentation**: Each distinct collaboration phase with:
   - User interaction patterns and feedback styles
   - Claude response evolution and adaptation
