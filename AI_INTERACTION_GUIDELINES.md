@@ -53,6 +53,18 @@ Expand when I use phrases like:
 ## Professional Context
 Remember my professional background (platform software, medical devices, networking) as described in PROFESSIONAL_BACKGROUND.md but don't repeat it back to me unless directly relevant to the question.
 
+## Writing Style Reference
+### Technical Communication
+- Detailed, precise descriptions focused on practical outcomes
+- Specific examples with measurable results
+- Integration of lessons learned and process improvements
+
+### Professional Voice
+- Confident but not boastful
+- Emphasis on team success over individual achievement
+- Pride in mission-critical work and customer outcomes
+- Engineering-focused problem-solving approach
+
 ## Generated Documentation
 - **BE ACCURATE AND FACTUAL** - No fabricated capabilities or exaggerated roles
 - **ASK FOR CLARIFICATION** before expanding on unclear capabilities
@@ -83,6 +95,44 @@ Always do: Code + Update docs → Code + Update docs → etc.
 - **Design decisions**: Update SYSTEM_DESIGN.md immediately
 - **Process changes**: Update relevant guidelines immediately
 - **Technical discoveries**: Update technical documentation immediately
+
+## Context Management & Documentation Updates
+
+### Automatic Documentation Updates at Context Threshold
+When context usage reaches 85% (15% remaining tokens), automatically initiate comprehensive documentation updates before continuing with primary tasks:
+
+1. **Immediate Actions:**
+   - Commit current work state with descriptive commit message
+   - Update all project markdown files with current progress and achievements
+   - Push commits to remote repository to preserve work
+
+2. **Documentation Update Priority Order:**
+   - SESSION_HANDOFF.md: Current state, achievements, next priorities
+   - CLAUDE.md: Implementation status, technical patterns, current results  
+   - README.md: Usage examples, current results, system capabilities
+   - COLLABORATION_LOG.md: Session insights, lessons learned, best practices
+   - ARCHITECTURE.md: Technical changes, new components, system design updates
+   - SYSTEM_DESIGN.md: Complete business requirements, operational workflows, and success metrics
+   
+
+3. **Required Content Updates:**
+   - Current implementation status and completion percentages
+   - Latest technical achievements and metrics
+   - Updated file hierarchies and new tools created
+   - Session insights and collaboration patterns discovered
+   - Next priority tasks and decision points
+
+4. **Commit and Handoff Pattern:**
+   - Create detailed commit messages documenting all changes
+   - Push to remote repository for persistence
+   - Update SESSION_HANDOFF.md with context for next session continuation
+   - Include specific metrics, file locations, and current system state
+
+5. **Context Preservation:**
+   - Document any in-progress analysis or debugging states
+   - Capture current todo list status and priorities
+   - Record any user feedback or requirements gathered during session
+   - Note any architectural decisions or technical approaches established
 
 #### AI Advantage
 Leverage AI's natural strengths:
@@ -134,18 +184,6 @@ You MUST update SESSION_HANDOFF.md whenever ANY of the following occurs:
 
 ### Decision Rule
 Update if changes would take >30 minutes to explain to someone picking up the work fresh.
-
-## Writing Style Reference
-### Technical Communication
-- Detailed, precise descriptions focused on practical outcomes
-- Specific examples with measurable results
-- Integration of lessons learned and process improvements
-
-### Professional Voice
-- Confident but not boastful
-- Emphasis on team success over individual achievement
-- Pride in mission-critical work and customer outcomes
-- Engineering-focused problem-solving approach
 
 ## Collaboration Documentation
 
