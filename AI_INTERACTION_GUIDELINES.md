@@ -42,6 +42,59 @@
 - When I explicitly ask for detailed analysis.
 - Legal/regulatory compliance topics.
 
+## Debugging Guidelines
+
+### Data-First Debugging Methodology
+**Core Principle**: Fix data layer inconsistencies before debugging transformation logic.
+
+#### 1. Data Source Validation (Always First)
+- **Verify all data sources**: Scraped files, configuration mappings, database exports
+- **Check data consistency**: Look for duplicate definitions across multiple files
+- **Validate single source of truth**: Ensure no conflicting data mappings exist
+- **Test import paths**: Verify data can be accessed from different execution contexts
+
+#### 2. Data Mapping Consolidation
+- **Eliminate redundancy**: Remove duplicate town/district/category mappings across files
+- **Centralize definitions**: Use single authoritative source for all geographic/categorical data
+- **Document data precedence**: Establish clear hierarchy for conflicting data sources
+- **Add validation functions**: Create functions to verify data consistency
+
+#### 3. Systematic Debugging Sequence
+1. **Data layer verification** → 2. **Parsing logic** → 3. **Transformation logic** → 4. **Output validation**
+- Never debug transformations first - data inconsistencies masquerade as logic bugs
+- Use reference files to establish ground truth for expected behavior
+- Create debug logging that identifies data source for each piece of information
+
+#### 4. Reference Testing Framework
+- **Create reference files**: Known good outputs for regression testing
+- **Build verification tools**: Aliases/scripts for rapid comparison to reference state
+- **Document edge cases**: Maintain test cases for all identified parsing edge cases
+- **Version control validation**: Track reference files alongside code changes
+
+#### 5. Position-Aware Processing Rules
+- **Text parsing priority**: First occurrence beats length for geographic/entity extraction
+- **Context consideration**: Word position and surrounding text matter for accuracy
+- **Precedence hierarchies**: Define clear order for multiple data sources (address → name → description → organization)
+- **Algorithm validation**: Test parsing with hyphenated and complex entity names
+
+#### 6. Regression Detection Patterns
+- **Manual verification**: User review of actual results catches issues automated tests miss
+- **Comparison tooling**: Fast diff-based validation against known good states
+- **Incremental testing**: Verify each change doesn't break existing functionality
+- **Production validation**: Test with full dataset before declaring success
+
+#### 7. Architecture Separation Principles
+- **Data definitions separate from transformation logic**: Prevents cross-contamination
+- **Quality analysis separate from data extraction**: Keeps core parsing clean
+- **Processing modules isolated**: Changes in one area don't affect others
+- **Clear interfaces**: Well-defined data flow between system components
+
+#### 8. Scale Testing Requirements
+- **Edge cases invisible at small scale**: Always test with full production dataset
+- **Pattern validation**: Verify algorithms work across all data variations
+- **Performance implications**: Large datasets reveal timing and memory issues
+- **User domain expertise**: Manual review by subject matter expert essential
+
 ## Expansion Triggers
 Expand when I use phrases like:
 - "Tell me more about..."
@@ -114,7 +167,6 @@ When context usage reaches 85% (15% remaining tokens), automatically initiate co
    - ARCHITECTURE.md: Technical changes, new components, system design updates
    - SYSTEM_DESIGN.md: Complete business requirements, operational workflows, and success metrics
    
-
 3. **Required Content Updates:**
    - Current implementation status and completion percentages
    - Latest technical achievements and metrics
